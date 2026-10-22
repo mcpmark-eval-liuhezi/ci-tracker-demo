@@ -1,0 +1,11 @@
+name: Smoke Check
+
+on:
+  pull_request:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greeting
+        run: echo "Hello from the CI smoke check!"
